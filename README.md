@@ -241,3 +241,12 @@ These limitations highlight the importance of training data diversity and the ne
 - **Improve model evaluation:** Test the model using handwriting samples from different sources beyond the MNIST dataset.
 - **Enhance application accessibility:** Explore deployment options and improve the user experience across different devices.
 
+## 13. Conclusion
+
+DigitVision demonstrates the application of Artificial Neural Networks in handwritten digit recognition, from data preprocessing and model development to evaluation and application deployment.
+
+The model achieved a test accuracy of 97.65% on the MNIST dataset, demonstrating its ability to classify handwritten digits effectively. Integrating the trained model into a Streamlit application also provided an interactive way to explore predictions and confidence-based rejection of uncertain inputs.
+
+The project highlighted the importance of data quality, model evaluation, and understanding the limitations of machine learning systems. In particular, the inability to reliably distinguish all non-digit inputs demonstrates opportunities for further improvement through more diverse training data and enhanced classification techniques.
+
+Overall, this project provided practical experience in deep learning, image classification, model evaluation, and building interactive AI applications.
