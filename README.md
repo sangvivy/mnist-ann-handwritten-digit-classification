@@ -82,7 +82,9 @@ The model achieved the following results on the MNIST test dataset:
 | Test Accuracy | 97.70% |
 | Test Loss | 0.0709 |
 | Training Accuracy | 97.74% |
+| Training Loss |0.0710|
 | Validation Accuracy | 97.95% |
+| Validation Loss | 0.0661 |
 
 ### Training History
 
