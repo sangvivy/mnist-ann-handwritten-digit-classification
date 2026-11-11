@@ -123,13 +123,6 @@ Users can draw a digit on the canvas and submit it for classification. The appli
 
 ![Digit recognition](images/digit_recognition.png)
 
-### Prediction Rejection
-
-The application uses confidence and prediction-margin thresholds to reject uncertain inputs.
-
-If the prediction does not meet the configured thresholds, the application displays a message indicating that it cannot confidently recognize the input as a digit.
-
-This helps reduce unreliable predictions, although it does not guarantee that letters or other non-digit drawings will always be rejected.
 
 ### Non-Digit Input Rejection
 
