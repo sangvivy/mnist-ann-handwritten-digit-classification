@@ -241,13 +241,3 @@ These limitations highlight the importance of training data diversity and the ne
 - **Improve model evaluation:** Test the model using handwriting samples from different sources beyond the MNIST dataset.
 - **Enhance application accessibility:** Explore deployment options and improve the user experience across different devices.
 
-## 13. Author
-
-Developed as a practical deep learning project to explore Artificial Neural Networks, image classification, model evaluation, and interactive machine learning applications.
-
----
-
-**Project:** DigitVision – MNIST Handwritten Digit Recognition  
-**Model:** Artificial Neural Network (ANN)  
-**Framework:** TensorFlow/Keras  
-**Application:** Streamlit
