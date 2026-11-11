@@ -79,9 +79,9 @@ The model achieved the following results on the MNIST test dataset:
 
 | Metric | Result |
 |---|---:|
-| Test Accuracy | 97.65% |
-| Test Loss | 0.0788 |
-| Training Accuracy | 97.71% |
+| Test Accuracy | 97.70% |
+| Test Loss | 0.0709 |
+| Training Accuracy | 97.74% |
 | Validation Accuracy | 97.95% |
 
 ### Training History
@@ -218,7 +218,7 @@ The application will open in your browser.
 
 ## 11.Model Limitations and Prediction Accuracy
 
-Although DigitVision achieved 97.65% accuracy on the MNIST test dataset, its predictions are not equally reliable for every type of input.
+Although DigitVision achieved 97.70% accuracy on the MNIST test dataset, its predictions are not equally reliable for every type of input.
 
 The model was trained exclusively on handwritten digits (0–9), meaning it has not learned to recognize letters, symbols, or other forms of handwriting. Consequently, some letters may be incorrectly classified as digits. For example, the letter A may be predicted as 4, while Y may be predicted as 3.
 
@@ -245,7 +245,7 @@ These limitations highlight the importance of training data diversity and the ne
 
 DigitVision demonstrates the application of Artificial Neural Networks in handwritten digit recognition, from data preprocessing and model development to evaluation and application deployment.
 
-The model achieved a test accuracy of 97.65% on the MNIST dataset, demonstrating its ability to classify handwritten digits effectively. Integrating the trained model into a Streamlit application also provided an interactive way to explore predictions and confidence-based rejection of uncertain inputs.
+The model achieved a test accuracy of 97.70% on the MNIST dataset, demonstrating its ability to classify handwritten digits effectively. Integrating the trained model into a Streamlit application also provided an interactive way to explore predictions and confidence-based rejection of uncertain inputs.
 
 The project highlighted the importance of data quality, model evaluation, and understanding the limitations of machine learning systems. In particular, the inability to reliably distinguish all non-digit inputs demonstrates opportunities for further improvement through more diverse training data and enhanced classification techniques.
 
