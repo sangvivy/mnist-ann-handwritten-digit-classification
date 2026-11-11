@@ -131,6 +131,14 @@ If the prediction does not meet the configured thresholds, the application displ
 
 This helps reduce unreliable predictions, although it does not guarantee that letters or other non-digit drawings will always be rejected.
 
+### Non-Digit Input Rejection
+
+DigitVision includes a prediction rejection mechanism that evaluates prediction confidence and the margin between the two highest class probabilities.
+
+When an input does not meet the configured thresholds, the application displays a message indicating that it cannot confidently recognize the drawing as a digit.
+
+![Non-digit input rejection](images/non_digit_rejection.png)
+
 ## 8. Technologies Used
 
 - Python
@@ -215,20 +223,30 @@ streamlit run app.py
 
 The application will open in your browser.
 
-## 11. Limitations
+## 11.Model Limitations and Prediction Accuracy
 
-- The model is trained specifically on the MNIST handwritten digit dataset.
-- Its performance may vary when presented with handwriting styles that differ significantly from the training data.
-- The prediction rejection mechanism relies on confidence thresholds and does not provide guaranteed non-digit detection.
-- The application is designed for single-digit recognition rather than full handwritten text recognition.
+Although DigitVision achieved 97.65% accuracy on the MNIST test dataset, its predictions are not equally reliable for every type of input.
+
+The model was trained exclusively on handwritten digits (0–9), meaning it has not learned to recognize letters, symbols, or other forms of handwriting. Consequently, some letters may be incorrectly classified as digits. For example, the letter A may be predicted as 4, while Y may be predicted as 3.
+
+The application includes a confidence-based rejection mechanism that can reject some inputs, such as certain letters and irregular drawings. However, this mechanism does not guarantee that all non-digit inputs will be identified correctly.
+
+These limitations highlight the importance of training data diversity and the need to expose classification models to a wider range of input patterns when developing more robust recognition systems.
+
+**Potential improvements:**
+- Introduce datasets containing both letters and digits.
+- Explore methods for distinguishing valid digits from non-digit inputs.
+- Improve input validation and prediction rejection.
+- Evaluate the model using handwriting samples beyond MNIST.
 
 ## 12. Future Improvements
 
-- Explore convolutional neural networks (CNNs) for image classification.
-- Improve the detection of non-digit inputs.
-- Expand the application to recognize multiple handwritten digits.
-- Evaluate the model using handwriting samples from different sources.
-- Explore model deployment and accessibility improvements.
+- **Explore Convolutional Neural Networks (CNNs):** Investigate whether CNNs can improve image feature extraction and digit classification performance.
+- **Expand the training dataset:** Incorporate more diverse handwriting samples to improve the model's ability to generalize to different writing styles.
+- **Improve non-digit detection:** Explore approaches that distinguish digits from letters, symbols, and other drawings.
+- **Support multi-digit recognition:** Extend the application to recognize sequences of handwritten digits rather than individual digits.
+- **Improve model evaluation:** Test the model using handwriting samples from different sources beyond the MNIST dataset.
+- **Enhance application accessibility:** Explore deployment options and improve the user experience across different devices.
 
 ## 13. Author
 
